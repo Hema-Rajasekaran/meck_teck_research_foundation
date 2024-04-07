@@ -38,6 +38,7 @@
     flex-wrap: wrap; /* Allow images to wrap to the next line */
     justify-content: center; /* Center images horizontally */
     margin-top: 10px; /* Adjust margin-top as needed */
+    margin-bottom: 350px;
   }
 
   .image-container img {
