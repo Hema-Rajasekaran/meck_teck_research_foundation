@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import con2 from "../../images/wallcon.jpg";
 import emailjs from "emailjs-com";
+import { FaPhone, FaEnvelope } from 'react-icons/fa'; 
 import "./contact.css";
 import And from "../../images/Capture.PNG";
 
@@ -118,10 +119,37 @@ export default function Contact() {
           <button type="submit">Send Mail</button>
         </form>
       </div>
+      <div className="contact-us-container">
+      <h2>Contact Details</h2>
+      <div className="contact-item">
+        
+        <div className="info">
+          <p><b>Dr.M.Meignanamoorthy,M.E.,Ph.D</b></p>
+          <p>Founder & CEO</p>
+          <p>Meck Teck Research Foundation</p>
+        </div>
+      </div>
+      
+      <div className="contact-item">
+        <div className="icon">
+          <FaEnvelope />
+        </div>
+        <div className="info">
+          <p>meckteckresfoundation@gmail.com</p>
+        </div>
+      </div>
+      <div className="contact-item">
+        <div className="icon">
+          <FaPhone />
+        </div>
+        <div className="info">
+          <p>+91 94880 58361</p>
+        </div>
+      </div>
+    </div>
       <div className="india">
         <img src={And} alt="hi" className="in1" />
       </div>
-
       <div className="foot2">
         <img src="logo.jpeg" alt="logo" class="logo1" />
         <p>&copy; 2024 Meck Teck Research Foundation.All rights Reserved</p>

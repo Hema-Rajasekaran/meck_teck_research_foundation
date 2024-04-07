@@ -19,10 +19,10 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #d80000;
+  color: #080338;
   font-size: xx-large;
   font-weight: bold;
-  font-family: "Srisakdi";
+  font-family: "robot";
 }
 
 @media (max-width: 768px) {

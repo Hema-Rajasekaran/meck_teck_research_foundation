@@ -1,13 +1,12 @@
-/* .founder-section {
-  text-align: center;
-  margin: 50px auto;
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.founder-section img {
-  max-width: 50%;
-  height: 50%;
-  margin-top: 20px;
-} */
+/* Other global styles */
+
 .quote-con {
   position: absolute;
   top: 50%;
@@ -18,74 +17,80 @@
   font-size: xx-large;
   font-weight: bold;
   font-family: "Srisakdi";
-}
+} 
+
+/* Other styles for .quote-con */
+
 .foot1 {
   width: 100%;
   height: 30vh;
   background: #130134;
-  margin-top: 20px;
+  display: flex; /* Ensure flex layout */
+  align-items: center; /* Vertically center content */
 }
+
 .foot1 img {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  transform: translate(60px, 38px);
+  transform: translate(150%,-10%);
+  margin-right: 80px; /* Adjust spacing between image and text */
 }
+
 .foot1 p {
   color: #ffff;
   font-size: 30px;
   align-items: center;
   display: flex;
-  padding-left: 130px;
-}
-.pose img {
-  width: 100%;
 }
 
-.mla {
-  width: 60%;
-  height: 10%;
-  align-items: center;
-  padding: 100px;
-}
+/* Other styles for .foot1 */
+
+/* Media queries for responsive adjustments */
 @media screen and (max-width: 768px) {
+  .quote-con {
+    /* Adjust transform for centering */
+    transform: translate(-50%, -50%);
+  }
+  /* Other styles for smaller screens */
+}
+
+@media screen and (max-width: 498px) {
   .quote-con {
     position: absolute;
     left: 50%;
-    transform: translate(-40%, -690%);
+    transform: translate(-50%, -590%);
     text-align: center;
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     font-size: 20px;
     font-weight: bold;
     font-family: "Srisakdi";
-  }
+  } 
+  
+  /* Other styles for .quote-con */
+  
   .foot1 {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background: #130134;
-    margin-top: 20px;
+    margin-top:-160px;
+    display: flex; /* Ensure flex layout */
+    align-items: center; /* Vertically center content */
   }
+  
   .foot1 img {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 20px;
-    transform: translate(60px, 38px);
+    transform: translate(190%,-10%);
+    margin-right: 80px; /* Adjust spacing between image and text */
   }
+  
   .foot1 p {
     color: #ffff;
     font-size: 20px;
     align-items: center;
     display: flex;
-    padding-left: 130px;
   }
-  .pose img {
-    width: 100%;
-  }
-
-  .mla {
-    width: 60%;
-    height: 10%;
-    align-items: center;
-    padding: 100px;
-  }
+  /* Other styles for even smaller screens */
 }

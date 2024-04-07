@@ -1,0 +1,41 @@
+/* Academic.css */
+.aca {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    width: 150px; /* Adjust image width as needed */
+    margin: 0 10px; /* Add margin between images */
+  }
+  
+  /* Media query for screens up to 768px */
+  @media (max-width: 768px) {
+    .aca {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .image-container img {
+      width: 120px; /* Adjust image width for smaller screens */
+    }
+  }
+  
+  /* Media query for screens up to 490px */
+  @media (max-width: 490px) {
+    .aca {
+      font-size: 18px; /* Adjust font size for even smaller screens */
+    }
+  
+    .image-container img {
+      width: 100px; /* Further adjust image width for very small screens */
+    }
+  }
+  

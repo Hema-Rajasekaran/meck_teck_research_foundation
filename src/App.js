@@ -12,6 +12,7 @@ import Navbar from "./components/navbar";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import Socialmedia from "./components/Socialmedia";
+import Academic from "./components/Academic/Academic";
 
 const App = () => {
   const [currentPage, setcurrentPage] = useState("home");
@@ -44,6 +45,7 @@ const App = () => {
         />
         <Route path="/service" element={<Service />} />
         <Route path="/journey" element={<Journey />} />
+        <Route path="/academic" element={<Academic />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

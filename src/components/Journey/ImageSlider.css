@@ -1,0 +1,47 @@
+/* ImageSlider.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-slider {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: -220px;
+}
+
+/* Set fixed dimensions for images */
+.image-slider .slick-slide img {
+  width: 100%;
+  height: 400px; /* Set a fixed height for the images */
+  object-fit: contain; /* Fit the entire image within the container */
+}
+
+/* Optional: Center dots and arrows */
+.slick-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 30px;
+  z-index: 1;
+}
+
+/* Adjust slider styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 20px;
+  }
+
+  /* Adjust image height for smaller screens */
+  .image-slider .slick-slide img {
+    height: 250px; /* Adjust the height as needed */
+  }
+}

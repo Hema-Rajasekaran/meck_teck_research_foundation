@@ -3,11 +3,10 @@ import Textblock from "./Textblock";
 import Imageslider from "./Imageslider";
 import "./service.css";
 import Inn from "../../images/clear.jpg";
-
-// import imageUrls from "../../images/d5.jpg";
 import imageUrls from "./imageUrls";
 import Autoscroll from "./Autoscroll";
 import Ino from "../../images/ser.PNG";
+import Cap from "../../images/Cap.PNG";
 
 export default function Service() {
   return (
@@ -21,6 +20,7 @@ export default function Service() {
         </div>
         <div className="ink">
           <img src={Ino} alt="hi" className="in1" />
+          <img src={Cap} alt="logo2" />
         </div>
         <div className="foot">
           <img src="logo.jpeg" alt="logo" class="logo1" />

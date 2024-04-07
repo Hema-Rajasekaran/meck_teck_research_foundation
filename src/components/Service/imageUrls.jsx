@@ -8,8 +8,6 @@ const imageUrls = [
   slide_image_7,
   slide_image_8,
   slide_image_9,
-  // slide_image_10,
-  // slide_image_5,
   slide_image_6,
 ];
 

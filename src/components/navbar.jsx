@@ -43,7 +43,16 @@ const Navbar = ({ onNavigate }) => {
             className="nav__link"
             onClick={() => onNavigate("journey")}
           >
-            Journey
+            Gallery
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link
+            to="/academic"
+            className="nav__link"
+            onClick={() => onNavigate("academic")}
+          >
+            Academic Patners
           </Link>
         </li>
         <li className="nav__item">

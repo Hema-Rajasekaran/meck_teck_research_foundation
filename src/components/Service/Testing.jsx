@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Cursor } from "react-simple-typewriter";
+import "./Testing.css";
 
 const Typewriter = ({ words }) => {
   const [index, setIndex] = useState(0);
@@ -28,22 +29,10 @@ export default function Testing() {
   return (
     <div>
       <div
-        style={{
-          fontSize: "50px",
-          fontWeight: "bold",
-          textAlign: "center",
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: " translate(-50%, -50%)",
-
-          color: "red",
-          justifyContent: "space-between",
-          fontFamily: "Srisakdi",
-        }}
+        className="container"
       >
         We make you expert in
-        <span style={{ fontWeight: "bold", color: "yellow" }}>
+        <span className="highlight">
           <Typewriter words={[" Python", " Java", " IOT"]} />
         </span>
         <Cursor />
@@ -51,20 +40,3 @@ export default function Testing() {
     </div>
   );
 }
-// import React from "react";
-// import { useTypewriter, Cursor } from "react-simple-typewriter";
-
-// export default function Testing() {
-//   const { text } = useTypewriter({
-//     words: ["Python", "Java", "IOT"],
-//   });
-//   return (
-//     <div>
-//       <div style={{ fontSize: "20px", fontWeight: "bold" }}>
-//         We make you excel in
-//         <span style={{ fontWeight: "bold", color: "green" }}>{text}</span>
-//         <Cursor />
-//       </div>
-//     </div>
-//   );
-// }
