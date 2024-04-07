@@ -32,3 +32,16 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .fotnav {
+    font-size: 10px;
+  }
+  .fotnav p {
+    font-size: 15px;
+    transform: translate(0%,50%);
+  }
+  .logo1{
+    width: 25px;
+    height: 25px;
+  }
+}
