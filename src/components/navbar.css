@@ -1,148 +1,151 @@
+/* Reset styles */
 *,
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Set base font size */
 html {
-  font-size: 62.5%;
-}
-body {
-  font-size: 1.6rem;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
+body {
+  font-size: 1.6rem; /* Base font size */
+}
+
+/* Remove default list styles */
 li {
   list-style: none;
   margin-right: 30px;
   display: inline;
 }
-nav ul li a:hover {
-  color: #12b312;
-}
-ul {
-  justify-content: space-around;
-}
+
+/* Style links */
 a {
   text-decoration: none;
   color: #ffff;
   font-weight: bold;
 }
+
+/* Navigation styles */
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 13vh;
-  background: #150238;
+  height: 13vh; /* Set height of the navigation bar */
+  background: #150238; /* Background color */
   font-weight: bold;
-  z-index: 1000;
+  z-index: 1000; /* Ensure it's above other content */
 }
+
 .nav img {
-  width: 50px;
-  height: 40px;
-  border-radius: 20px;
-  transform: translateX(-45px);
-  margin-left: 50px;
+  width: 50px; /* Adjust image width */
+  height: 40px; /* Adjust image height */
+  border-radius: 20px; /* Rounded corners for the image */
+  transform: translateX(-45px); /* Positioning */
+  margin-left: 50px; /* Additional left margin */
 }
+
 .nav__brand {
   text-transform: uppercase;
   font-weight: bold;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 20px; /* Original font size */
 }
+
 .nav__menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 3rem; /* Gap between menu items */
 }
+
 .nav__toggler div {
   width: 2.5rem;
   height: 0.2rem;
   margin: 0.4rem;
   background: #ffff;
 }
+
 .nav__toggler {
   cursor: pointer;
-  display: none;
+  display: none; /* Initially hidden on larger screens */
 }
-/* .nav__toggler:focus + .nav__menu,
-.nav__toggler.toggle + .nav__menu {
-  display: block; 
-} */
 
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .nav__toggler {
-    display: block;
+    display: block; /* Show toggler icon */
   }
+  
   .nav__brand {
-    text-transform: uppercase;
-    font-weight: bold;
-    justify-content: space-around;
-    font-size: 15px;
+    font-size: 15px; /* Adjusted font size */
   }
-  /* .nav__toggler.toggle + .nav__menu {
-    display: block;
-  } */
+
   .nav__menu {
     position: fixed;
-    top: 10vh;
+    top: 13vh; /* Adjusted top position */
     right: 0;
     width: 50%;
-    height: 93vh;
+    height: 93vh; /* Adjusted height */
     display: flex;
     background: #150238;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
     z-index: 1000;
+    overflow-y: auto; /* Add scroll when content exceeds viewport height */
   }
+
   .nav img {
-    width: 40px;
-    height: 35px;
-    border-radius: 20px;
-    transform: translate(-70%, 0%);
+    width: 40px; /* Adjusted image width */
+    height: 35px; /* Adjusted image height */
+    transform: translate(-70%, 0%); /* Adjusted image position */
   }
 }
+
 @media screen and (max-width: 498px) {
   .nav__toggler {
-    display: block;
+    display: block; /* Show toggler icon */
   }
+  
   .nav__brand {
-    text-transform: uppercase;
-    font-weight: bold;
-    justify-content: space-around;
-    font-size: small;
-    transform:translate(10%,0%)
+    font-size: small; /* Adjusted font size */
+    transform: translate(10%, 0%); /* Adjusted position */
   }
-  /* .nav__toggler.toggle + .nav__menu {
-    display: block;
-  } */
+
   .nav__menu {
     position: fixed;
-    top: 10vh;
+    top: 13vh; /* Adjusted top position */
     right: 0;
     width: 50%;
-    height: 93vh;
+    height: 93vh; /* Adjusted height */
     display: flex;
     background: #150238;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
     z-index: 1000;
+    overflow-y: auto; /* Add scroll when content exceeds viewport height */
   }
+
   .nav img {
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    transform: translate(-60%, 0%);
+    width: 30px; /* Adjusted image width */
+    height: 30px; /* Adjusted image height */
+    transform: translate(-60%, 0%); /* Adjusted image position */
   }
 }
+
 .nav__active {
   transform: translateX(0);
 }
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-4px, 5px);
 }
+
 .toggle .line2 {
   opacity: 0;
 }
