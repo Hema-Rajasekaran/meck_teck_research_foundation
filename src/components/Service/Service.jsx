@@ -18,7 +18,7 @@ export default function Service() {
           <Textblock />
           <Imageslider images={imageUrls} />
         </div>
-        <div className="ink">
+        <div className="ink2">
           <img src={Ino} alt="hi" className="in1" />
           <img src={Cap} alt="logo2" />
         </div>

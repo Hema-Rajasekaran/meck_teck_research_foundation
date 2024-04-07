@@ -50,9 +50,23 @@
 @media screen and (max-width: 768px) {
   .quote-con {
     /* Adjust transform for centering */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -290%);
   }
   /* Other styles for smaller screens */
+}
+.foot1 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  transform: translate(190%,-10%);
+  margin-right: 80px; /* Adjust spacing between image and text */
+}
+
+.foot1 p {
+  color: #ffff;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
 }
 
 @media screen and (max-width: 498px) {
@@ -73,14 +87,14 @@
     width: 100%;
     height: 40vh;
     background: #130134;
-    margin-top:-160px;
+    
     display: flex; /* Ensure flex layout */
     align-items: center; /* Vertically center content */
   }
   
   .foot1 img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
     transform: translate(190%,-10%);
     margin-right: 80px; /* Adjust spacing between image and text */
@@ -88,7 +102,46 @@
   
   .foot1 p {
     color: #ffff;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+  }
+  /* Other styles for even smaller screens */
+}
+@media screen and (max-width: 402px) {
+  .quote-con {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
     font-size: 20px;
+    font-weight: bold;
+    font-family: "Srisakdi";
+  } 
+  
+  /* Other styles for .quote-con */
+  
+  .foot1 {
+    width: 100%;
+    height: 40vh;
+    background: #130134;
+    
+    display: flex; /* Ensure flex layout */
+    align-items: center; /* Vertically center content */
+  }
+  
+  .foot1 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    transform: translate(190%,-10%);
+    margin-right: 80px; /* Adjust spacing between image and text */
+  }
+  
+  .foot1 p {
+    color: #ffff;
+    font-size: 15px;
     align-items: center;
     display: flex;
   }
