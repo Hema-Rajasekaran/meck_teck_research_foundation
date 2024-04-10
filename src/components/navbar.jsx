@@ -17,11 +17,12 @@ const Navbar = ({ onNavigate }) => {
   /* */
   return (
     <nav className="nav">
-      <img src="logo.jpeg" alt="logo" class="logo" />
+      <img src="favicon1.jpeg" alt="logo" class="logo" />
       <a href="#" className="nav__brand">
         MECK TECK RESEARCH FOUNDATION
       </a>
-      <img src="favicon1.jpeg" alt="logo" class="logo" />
+      <img src="logo.jpeg" alt="logo" class="logo" />
+      
       <ul className={active}>
         <li className="nav__item">
           <Link to="/" className="nav__link" onClick={() => onNavigate("home")}>
@@ -34,7 +35,16 @@ const Navbar = ({ onNavigate }) => {
             className="nav__link"
             onClick={() => onNavigate("service")}
           >
-            Service
+            Services
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link
+            to="/excellence"
+            className="nav__link"
+            onClick={() => onNavigate("excellence")}
+          >
+            COE
           </Link>
         </li>
         <li className="nav__item">

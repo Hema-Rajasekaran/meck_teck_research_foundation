@@ -20,7 +20,6 @@ export default function Service() {
         </div>
         <div className="ink2">
           <img src={Ino} alt="hi" className="in1" />
-          <img src={Cap} alt="logo2" />
         </div>
         <div className="foot">
           <img src="logo.jpeg" alt="logo" class="logo1" />

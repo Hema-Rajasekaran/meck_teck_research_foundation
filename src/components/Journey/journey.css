@@ -27,6 +27,7 @@
   background: #130134;
   display: flex; /* Ensure flex layout */
   align-items: center; /* Vertically center content */
+  margin-top:220px;
 }
 
 .foot1 img {

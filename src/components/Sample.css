@@ -22,7 +22,7 @@ video {
   color: #080338;
   font-size: xx-large;
   font-weight: bold;
-  font-family: "robot";
+  font-family: "roboto";
 }
 
 @media (max-width: 768px) {
