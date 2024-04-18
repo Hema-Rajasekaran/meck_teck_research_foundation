@@ -12,7 +12,7 @@
   margin: 40px;
   margin-bottom: -140px;
   top: 50%;
-  transform: translate(-45%, -115%);
+  transform: translate(-45%, -80%);
   border-radius: 30px;
 }
 
@@ -20,6 +20,7 @@
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
   opacity: 0.9;
+  margin-top: 0px;
   color: #ffffff;
   font-weight: bold;
   background-color: #150238;
@@ -35,9 +36,10 @@
 }
 .para {
   align-items: center;
-  font-size: 22px;
-  padding-bottom: 160px;
-  width: 65%;
+  font-size: 20px;
+  padding-bottom: 60px;
+  width: 80%;
+  text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media screen and (max-width: 768px) {
