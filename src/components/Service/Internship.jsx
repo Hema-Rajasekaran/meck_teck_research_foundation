@@ -1,5 +1,5 @@
 import React from 'react'
-import  p2 from "../../images/pest.jpeg"
+import  p2 from "../../images/intern.png"
 import "./service.css"
 
 export default function Intership() {

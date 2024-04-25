@@ -39,9 +39,9 @@ export default function Service() {
           <Textblock />
           <Imageslider images={imageUrls} />
         </div>
-        <div className="ink2">
+        {/* <div className="ink2">
           <img src={Ino} alt="hi" className="in1" />
-        </div>
+        </div> */}
         <div className="foot">
           <img src="logo.jpeg" alt="logo" class="logo1" />
           <p>&copy; 2024 Meck Teck Research Foundation.All rights Reserved</p>

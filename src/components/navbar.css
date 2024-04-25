@@ -40,8 +40,8 @@ a {
   z-index: 1000; /* Ensure it's above other content */
 }
 .nav img {
-  width: 50px; /* Adjust image width */
-  height: 40px; /* Adjust image height */
+  width: 40px; /* Adjust image width */
+  height: 30px; /* Adjust image height */
   border-radius: 20px; /* Rounded corners for the image */
   transform: translateX(-45px); /* Positioning */
   margin-left: 50px; /* Additional left margin */
@@ -51,7 +51,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   justify-content: space-around;
-  font-size: 20px; /* Original font size */
+  font-size: 17px; /* Original font size */
 }
 
 .nav__menu {
@@ -169,7 +169,7 @@ a {
   }
   
   .nav__brand {
-    font-size: small; /* Adjusted font size */
+    font-size: 10px;/* Adjusted font size */
     transform: translate(10%, 0%); /* Adjusted position */
   }
 

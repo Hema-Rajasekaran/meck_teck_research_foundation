@@ -1,6 +1,6 @@
 import React from 'react';
 import immgg from "../../images/b3.png";
-import "./service.css"
+import "./service.css";
 
 export default function ProductDesign() {
   return (
