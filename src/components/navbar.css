@@ -84,7 +84,7 @@ a {
 
 .nav__submenu a:hover {
   background-color:black; /* Hover background color */
-} */
+} 
 .nav__toggler div {
   width: 2.5rem;
   height: 0.2rem;
@@ -175,6 +175,7 @@ a {
   }
   .nav__udyam{
     font-size: 10px;
+
     
   }
 
