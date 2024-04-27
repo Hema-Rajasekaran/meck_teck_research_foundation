@@ -171,6 +171,11 @@ a {
   .nav__brand {
     font-size: 10px;/* Adjusted font size */
     transform: translate(10%, 0%); /* Adjusted position */
+    border:20px;
+  }
+  .nav__udyam{
+    font-size: 10px;
+    
   }
 
   .nav__menu {

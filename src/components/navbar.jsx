@@ -32,6 +32,8 @@ const Navbar = ({ onNavigate }) => {
       <a href="#" className="nav__brand">
         MECK TECK RESEARCH FOUNDATION
       </a>
+      <br></br>
+      {/* <p className="nav__udyam">( Registered Under Ministry of Micro,Small and Medium Enterprises UDYAM-TN-17-00-157761 )</p> */}
       <img src="logo.jpeg" alt="logo" className="logo" />
       
       <ul className={active}>

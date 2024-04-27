@@ -12,6 +12,7 @@ const Home = () => {
           At{" "}
           <span>
             <b>Meck Teck Research Foundation</b>
+            
           </span>{" "}
           was established in the year 2018.It was recognized by Ministry of Micro,Small & Medium Enterprises.Meck Teck Research Foundation is a startup company offering Workshop,Value added course,certification course,Seminar,Guest Lecture,Skill Development Course,Internship and Projects in the field of science and engineering under emerging technologies to make the students as industry ready person.
         </p><br/>
