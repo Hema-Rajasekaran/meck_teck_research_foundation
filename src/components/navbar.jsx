@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
@@ -6,15 +6,26 @@ const Navbar = ({ onNavigate }) => {
   const [active, setActive] = useState("nav__menu");
   const [toggleIcon, setToggleIcon] = useState("nav__toggler");
   const [showSubMenu, setShowSubMenu] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setActive("nav__menu"); // Close nav menu when clicked outside
+        setToggleIcon("nav__toggler"); // Reset toggle icon
+        setShowSubMenu(false); // Close submenu
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const navToggle = () => {
-    active === "nav__menu"
-      ? setActive("nav__menu nav__active")
-      : setActive("nav__menu");
-
-    toggleIcon === "nav__toggler"
-      ? setToggleIcon("nav__toggler toggle")
-      : setToggleIcon("nav__toggler");
+    setActive(active === "nav__menu" ? "nav__menu nav__active" : "nav__menu");
+    setToggleIcon(toggleIcon === "nav__toggler" ? "nav__toggler toggle" : "nav__toggler");
   };
 
   const toggleSubMenu = () => {
@@ -27,7 +38,7 @@ const Navbar = ({ onNavigate }) => {
   };
 
   return (
-    <nav className="nav">
+    <nav className="nav" ref={navRef}>
       <img src="favicon1.jpeg" alt="logo" className="logo" />
       <a href="#" className="nav__brand">
         MECK TECK RESEARCH FOUNDATION

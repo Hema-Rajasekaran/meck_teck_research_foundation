@@ -120,7 +120,7 @@ a {
     top: 13vh; /* Adjusted top position */
     right: 0;
     width: 50%;
-    height: 93vh; /* Adjusted height */
+    height: 70vh; /* Adjusted height */
     display: flex;
     background: #150238;
     flex-direction: column;
@@ -157,7 +157,6 @@ a {
     padding: 10px; /* Adjust padding as needed */
     border-radius: 5px; /* Rounded corners for links */
   }
-  
   .nav__submenu a:hover {
     background-color:black; /* Hover background color */
   }
@@ -184,7 +183,7 @@ a {
     top: 13vh; /* Adjusted top position */
     right: 0;
     width: 50%;
-    height: 93vh; /* Adjusted height */
+    height: 50vh; /* Adjusted height */
     display: flex;
     background: #150238;
     flex-direction: column;
