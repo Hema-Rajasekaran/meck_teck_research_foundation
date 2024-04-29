@@ -120,7 +120,7 @@ a {
     top: 13vh; /* Adjusted top position */
     right: 0;
     width: 50%;
-    height: 70vh; /* Adjusted height */
+    height: 60vh; /* Adjusted height */
     display: flex;
     background: #150238;
     flex-direction: column;
