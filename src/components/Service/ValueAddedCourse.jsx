@@ -1,5 +1,5 @@
 import React from 'react'
-import pt from "../../images/intern.png"
+import pt from "../../images/course.png"
 
 export default function ValueAddedCourse() {
   return (

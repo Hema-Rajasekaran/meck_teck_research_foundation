@@ -1,5 +1,5 @@
 import React from 'react'
-import  p2 from "../../images/kik.jpg"
+import  p2 from "../../images/academic.jpeg"
 import "./service.css"
 
 export default function AcademicProject() {

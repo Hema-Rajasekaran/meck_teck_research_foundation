@@ -5,6 +5,7 @@ import image2 from "../../images/i2.PNG";
 import image4 from "../../images/i4.PNG";
 import image5 from "../../images/w1.jpeg";
 import image6 from "../../images/w2.jpeg";
+import image7 from "../../images/me.jpeg";
 
 
 export default function Academic() {
@@ -17,6 +18,7 @@ export default function Academic() {
         <img src={image4} alt="Partner 4" />
         <img src={image5} alt="Partner 3" />
         <img src={image6} alt="Partner 4" />
+        <img src={image7} alt="Partner 5" />
       </div>
     </div>
   );
